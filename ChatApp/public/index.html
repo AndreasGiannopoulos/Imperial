@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Imperial Chat</title>
+</head>
+
+<body>
+    <a href="http://localhost:3000" class="active navbar-brand"><i class="fas fa-headphones-alt fa-2x"></i> Imperial Headphones</a>
+    <section>
+    <div class="join-container">
+        <header class="join-header">
+            <h1> Imperial Chat </h1> <!--<i class="fas fa-smile"></i>-->
+        </header>
+        <main class="join-main">
+            <form onsubmit="return checkform(this)"; action="chat.html">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter username..." required />
+                </div>
+                <!-- <div class="form-control">
+                    <label for="room">Room</label>
+                    <select name="room" id="room">
+							<option value="headphones">Headphones</option>
+							<option value="Earbuds">Earbuds</option>
+							<option value="proHeadphones">Pro Headphones</option>
+							<option value="Earphones">Earphones</option>
+						</select>
+                </div> -->
+                <!-- START CAPTCHA -->
+                <br>
+                <div class="capbox">
+
+                    <div id="CaptchaDiv"></div>
+
+                    <div class="capbox-inner">
+                        Type the number:<br>
+
+                        <input type="hidden" id="txtCaptcha">
+                        <input type="text" name="CaptchaInput" required id="CaptchaInput" size="15"><br>
+
+                    </div>
+                </div>
+                <br><br>
+                <!-- END CAPTCHA -->
+                <button style="margin-bottom: 20px;" type="submit" class="btn">Join Chat</button> 
+        </main>
+    </div>
+    </section>
+    <script type="text/javascript">
+
+        // Captcha Script
+
+        function checkform(theform){
+        var why = "";
+
+        if(theform.CaptchaInput.value == ""){
+        why += "- Please Enter CAPTCHA Code.\n";
+        }
+        if(theform.CaptchaInput.value != ""){
+        if(ValidCaptcha(theform.CaptchaInput.value) == false){
+        why += "- The CAPTCHA Code Does Not Match.\n";
+        }
+        }
+        if(why != ""){
+        alert(why);
+        return false;
+        }
+        }
+
+        var a = Math.ceil(Math.random() * 9)+ '';
+        var b = Math.ceil(Math.random() * 9)+ '';
+        var c = Math.ceil(Math.random() * 9)+ '';
+        var d = Math.ceil(Math.random() * 9)+ '';
+        var e = Math.ceil(Math.random() * 9)+ '';
+
+        var code = a + b + c + d + e;
+        document.getElementById("txtCaptcha").value = code;
+        document.getElementById("CaptchaDiv").innerHTML = code;
+
+        // Validate input against the generated number
+        function ValidCaptcha(){
+        var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+        var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+        if (str1 == str2){
+        return true;
+        }else{
+        return false;
+        }
+        }
+
+        // Remove the spaces from the entered and generated code
+        function removeSpaces(string){
+        return string.split(' ').join('');
+        }
+        </script>
+</body>
+
+</html>
