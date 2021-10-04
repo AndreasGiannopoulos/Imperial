@@ -1,23 +1,23 @@
 Fully functional eshop built with the MERN stack
 
 -Full featured shopping cart
--Product reviews and ratings  
--Product search feature 
+-Product reviews and ratings
+-Product search feature
 -User profile with orders 
--Admin product management 
+-Admin product management
 -Admin user management 
--Admin Order details page 
+-Admin Order details page
 -Mark orders as delivered option 
--Checkout process (shipping, payment method, etc) 
--PayPal / credit card integration 
--Live chat 
+-Checkout process (shipping, payment method, etc)
+-PayPal / credit card integration
+-Live chat
 -Database seeder (products & users) 
 
 Install Dependencies (frontend & backend)
--npm install 
--cd frontend 
--npm install 
--cd ChatApp 
+-npm install
+-cd frontend
+-npm install
+-cd ChatApp
 -npm install 
 
 Seed Database
