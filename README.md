@@ -30,4 +30,4 @@ Install Dependencies (frontend & backend &)
 - andreas@gmail.com (Customer)  123456
 
 # Run
-* npm start , to each folder (main, frontend, ChatApp)
+* npm start , to each folder (main, frontend, ChatApp) frontend (:3000) & backend (:5000) & livechat (:4000)
