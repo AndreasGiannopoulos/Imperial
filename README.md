@@ -1,6 +1,6 @@
 Fully functional eshop built with the MERN stack
 
--Full featured shopping cart 
+-Full featured shopping cart
 -Product reviews and ratings  
 -Product search feature 
 -User profile with orders 
