@@ -11,9 +11,10 @@ Fully functional eshop built with the MERN stack (MongoDB, Express, React, Node.
 * Mark orders as delivered option
 * Checkout process (shipping, payment method, etc)
 * PayPal / credit card integration
+* Live Chat
 * Database seeder (products & users)
 
-Install Dependencies (frontend & backend)
+Install Dependencies (frontend & backend &)
 - npm install
 - cd frontend
 - npm install
@@ -27,3 +28,6 @@ Install Dependencies (frontend & backend)
 # Sample User Logins
 - admin@gmail.com (Admin)  123456
 - andreas@gmail.com (Customer)  123456
+
+# Run
+* npm start , to each folder (main, frontend, ChatApp)
