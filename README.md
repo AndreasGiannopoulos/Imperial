@@ -22,9 +22,9 @@ Install Dependencies (frontend & backend)
 -npm install
 
 Seed Database
-# Import data
+Import data
 npm run data:import
-# Destroy data
+Destroy data
 npm run data:destroy
 
 Sample User Logins
