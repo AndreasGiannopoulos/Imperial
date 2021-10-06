@@ -30,7 +30,7 @@ Fully functional eshop built with the MERN stack (MongoDB, Express, React, Node.
 - andreas@gmail.com (Customer)  123456
 
 # Run
-once you run ```npm start```  main, frontend, ChatApp folders, will fire up which you can access at
+once you run ```npm start``` at main, frontend, ChatApp folders, will fire up which you can access at
 - frontend: http://localhost:3000
 - livechat: http://localhost:4000
 - backend: http://localhost:5000
