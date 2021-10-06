@@ -15,11 +15,11 @@ Fully functional eshop built with the MERN stack (MongoDB, Express, React, Node.
 * Database seeder (products & users)
 
 Install Dependencies (frontend & backend &)
--  ```npm install``` 
-- ```cd frontend```
-- ```npm install```
-- ```cd ChatApp```
-- ```npm install``` 
+- ```$npm install``` 
+- ```$cd frontend```
+- ```$npm install```
+- ```$cd ChatApp```
+- ```$npm install``` 
 
 # Seed Database
 - Import data: ```npm run data:import```
