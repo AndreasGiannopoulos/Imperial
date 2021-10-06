@@ -15,7 +15,7 @@ Fully functional eshop built with the MERN stack (MongoDB, Express, React, Node.
 * Database seeder (products & users)
 
 Install Dependencies (frontend & backend &)
--  ```sh npm install
+-  ```sh npm install``` 
 - cd frontend
 - npm install
 - cd ChatApp
