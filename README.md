@@ -32,4 +32,5 @@ Install Dependencies (frontend & backend &)
 # Run
 *  ```sh
    npm start
-   ``` , to each folder (main, frontend, ChatApp) frontend (:3000) & backend (:5000) & livechat (:4000)
+   ``` 
+   to each folder (main, frontend, ChatApp) frontend (:3000) & backend (:5000) & livechat (:4000)
