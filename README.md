@@ -14,7 +14,7 @@ Fully functional eshop built with the MERN stack (MongoDB, Express, React, Node.
 * Live Chat
 * Database seeder (products & users)
 
-# Install Dependencies (frontend & backend &)
+# Install Dependencies (frontend & backend & livechat)
 - ```$ npm install``` 
 - ```$ cd frontend```
 - ```$ npm install```
@@ -30,5 +30,7 @@ Fully functional eshop built with the MERN stack (MongoDB, Express, React, Node.
 - andreas@gmail.com (Customer)  123456
 
 # Run
-*  ```npm start``` 
-   to each folder (main, frontend, ChatApp) frontend (:3000) & backend (:5000) & livechat (:4000)
+once you run ```npm start```  main, frontend, ChatApp folders, will fire up which you can access at
+- frontend: http://localhost:3000
+- livechat: http://localhost:4000
+- backend: http://localhost:5000
